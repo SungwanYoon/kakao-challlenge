@@ -1,0 +1,37 @@
+/*
+1.Everything has to be done with flexbox.✔
+2.No margins or paddings allowed.✔
+3.The second grey box has to become red when the mouse is on top of it.
+4.The grey boxes can only have one class name.
+*/
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: sans-serif;
+  background-color: #1c90ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #ff6b81;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tinyBox {
+  background-color: #d8d8d8;
+  width: 50px;
+  height: 50px;
+}
+
+.tinyBox:nth-child(2):hover {
+  background-color: red;
+}
