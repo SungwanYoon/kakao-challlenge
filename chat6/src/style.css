@@ -1,0 +1,99 @@
+html,
+body {
+  height: 100%;
+}
+
+.render__top {
+  background-color: #63cdda;
+  height: 50%;
+}
+
+.top__dot {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  top: calc(50% - 6px);
+  left: calc(50% - 6px);
+  border-radius: 12px;
+  background-color: #303952;
+  transform-origin: 50% 50%;
+  animation: spin-dot 1s ease-in-out infinite;
+}
+
+.top__dot:before {
+  content: "";
+  position: absolute;
+  background-color: #303952;
+  top: 0px;
+  left: -25px;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+}
+
+.top__dot:after {
+  content: "";
+  position: absolute;
+  background-color: #303952;
+  top: 0px;
+  left: 25px;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+}
+
+@keyframes spin-dot {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.render__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8a5c2;
+  height: 50%;
+}
+.render__bottom div {
+  width: 10px;
+  margin: 0px 2px;
+  background: #303952;
+  animation: move-stick 1.5s ease-out infinite;
+}
+.render__bottom div:nth-child(1) {
+  animation-delay: -0.4s;
+}
+.render__bottom div:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.render__bottom div:nth-child(3) {
+  animation-delay: 0;
+}
+.render__bottom div:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.render__bottom div:nth-child(5) {
+  animation-delay: 0.4s;
+}
+@keyframes move-stick {
+  0% {
+    top: 24px;
+    height: 32px;
+  }
+  20% {
+    top: 8px;
+    height: 96px;
+  }
+  40%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
