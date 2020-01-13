@@ -1,0 +1,79 @@
+.nav {
+  position: sticky;
+
+  width: 100%;
+  background-color: #fcfcfc;
+  padding: 20px 50px; /*Top&Bottom Left&Right*/
+  left: 0px;
+  bottom: 0px;
+  border-top: 1px solid #f7f7f7;
+  box-sizing: border-box;
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav i {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav .nav__list-link {
+  position: relative;
+}
+
+.nav__list-item {
+  opacity: 0.2;
+}
+
+.nav__list-item.active {
+  opacity: 1;
+}
+
+.nav .nav__badge {
+  position: absolute; /*반드시부모속성 position: relative*/
+  top: -10px;
+  right: -10px;
+  font-size: 10px;
+  color: white;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.link-green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #20bf6b;
+  color: white;
+  border-radius: 12px;
+}
+
+.link-green i {
+  margin: 10px 20px;
+}
+
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.nav {
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+}

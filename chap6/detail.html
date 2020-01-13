@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/bf7eb55d89.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Chap6 | Kakao</title>
+  </head>
+  <body>
+    <main class="chats detail">
+      <ul class="chats__list">
+        <li class="chats__chat">
+          <div class="chats__chat friend friend--lg">
+            <div class="friend__column">
+              <div class="friend__column-in">
+                <a href="index.html" class="header__back-btn"
+                  ><i class="fas fa-arrow-left"></i
+                ></a>
+              </div>
+              <div class="friend__column">
+                <img
+                  src="images/3.png"
+                  alt=""
+                  class="i-avatar friend__avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Sam Martin
+                  </span>
+                  <span class="friend__bottom-text">5 min</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="friend__column">
+              <span class="friend__timestamp">
+                <i class="fas fa-ellipsis-h"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="chats__chat friend friend--lg">
+            <div class="friend__middle">
+              <img src="./images/content1.jpg" alt="" class="" />
+            </div>
+          </div>
+          <div class="chats__chat friend friend--lg">
+            <div class="friend__bottom">
+              <div class="friend__content">
+                <span class="friend__like">
+                  <i class="far fa-heart"></i> 1,234
+                </span>
+                <span class="friend__like">
+                  <i class="far fa-comments"></i> 5,678
+                </span>
+              </div>
+            </div>
+            <div class="friend__bottom">
+              <span class="friend__timestamp">
+                <i class="far fa-bookmark"></i>
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="chats__list">
+        <li class="chats__chat">
+          <div class="chats__chat friend friend--lg">
+            <div class="friend__column">
+              <img src="images/3.png" alt="" class="i-avatar friend__avatar" />
+              <div class="friend__content">
+                <span class="friend__name-reply">
+                  Charlie
+                </span>
+                <span class="friend__bottom-text-reply"
+                  >Waiting more from you</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="chats__chat friend friend--lg">
+            <div class="friend__column">
+              <img src="images/4.png" alt="" class="i-avatar friend__avatar" />
+              <div class="friend__content">
+                <span class="friend__name-reply">
+                  Charlie
+                </span>
+                <span class="friend__bottom-text-reply">Very good!</span>
+              </div>
+            </div>
+          </div>
+          <div class="chats__chat friend friend--lg">
+            <div class="friend__column">
+              <img src="images/5.png" alt="" class="i-avatar friend__avatar" />
+              <div class="friend__content">
+                <span class="friend__name-reply">
+                  Charlie
+                </span>
+                <span class="friend__bottom-text-reply">follow!</span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <div class="chat__write-container shadow">
+      <input
+        class="chat__write"
+        type="text"
+        placeholder="Add a comment"
+        class="chat__write-input"
+      />
+      <div class="chat__icon-left chat__icon">
+        <img src="images/5.png" alt="" class="i-avatar friend__avatar" />
+      </div>
+      <div class="chat__icon-right chat__icon">
+        <span class="chat__write-icon"
+          ><i class="fab fa-telegram-plane"></i
+        ></span>
+      </div>
+    </div>
+  </body>
+</html>

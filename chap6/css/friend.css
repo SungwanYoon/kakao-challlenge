@@ -1,0 +1,107 @@
+.head__friend {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+
+.head__friend .friend__avatar {
+  width: auto;
+  border-radius: 38%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.friend__avatar.h-avatar {
+  margin: 0px 8px;
+  width: 50px;
+  height: 50px;
+}
+
+.nav__list-link {
+  position: relative;
+}
+
+.nav__badge {
+  position: absolute; /*반드시부모속성 position: relative*/
+  top: 32px;
+  right: 0px;
+  font-size: 10px;
+  color: white;
+  background-color: #2bcbba;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend__column {
+  display: flex;
+  justify-content: center;
+}
+
+.friend__column-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.friend__middle {
+  display: flex;
+  justify-content: center;
+}
+
+.friend__middle img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 10px 10px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+}
+
+.friend__bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.friend__bottom .friend__content {
+  display: flex;
+}
+
+.friend__content .friend__name {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.friend__content .friend__bottom-text {
+  font-size: 14px;
+}
+.friend__content .friend__name-reply {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.friend__content .friend__bottom-text-reply {
+  font-size: 12px;
+}
+
+.friend__content .friend__like {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
