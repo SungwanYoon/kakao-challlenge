@@ -80,6 +80,7 @@ body {
 
 .content__bottom {
   height: 50%;
+  width: 53%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,9 +146,6 @@ body {
   border-radius: 30px;
   margin: 0px 10px;
   width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .button__right {
@@ -159,7 +157,4 @@ body {
   border-radius: 30px;
   margin: 0px 10px;
   width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
