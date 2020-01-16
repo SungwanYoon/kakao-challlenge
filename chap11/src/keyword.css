@@ -1,0 +1,14 @@
+.head__keyword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.keyword_bubble {
+  margin: 4px;
+  padding: 5px 10px;
+  background-color: #0fbcf9;
+  color: #d2dae2;
+  border-radius: 10px 10px 10px 0;
+}
